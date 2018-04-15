@@ -25,13 +25,10 @@
 
 #   Set Paths
 #   ------------------------------------------------------------
-    export PATH="$PATH:/usr/local/bin/"
     export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/go/bin:$(go env GOPATH)/bin:$PATH"
-
 
 #   Set GOPATH
     export GOPATH=$(go env GOPATH)
-
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -49,11 +46,9 @@
 #   export CLICOLOR=1
 #   export LSCOLORS=ExFxBxDxCxegedabagacad
 
-
 #   -----------------------------
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
-
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
@@ -100,7 +95,6 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 #   -------------------------------
 #   3. FILE AND FOLDER MANAGEMENT
 #   -------------------------------
-
 zipf () { zip -r "$1".zip "$1" ; }          # zipf:         To create a ZIP archive of a folder
 alias numFiles='echo $(ls -1 | wc -l)'      # numFiles:     Count of non-hidden files in current dir
 alias make1mb='mkfile 1m ./1MB.dat'         # make1mb:      Creates a file of 1mb size (all zeros)
